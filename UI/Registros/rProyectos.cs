@@ -13,11 +13,11 @@ using System.Windows.Shapes;
 namespace Albenny_P2_AP1.UI.Registros
 {
     /// <summary>
-    /// Interaction logic for rSegundoParcial.xaml
+    /// Interaction logic for rProyectos.xaml
     /// </summary>
-    public partial class rSegundoParcial : Window
+    public partial class rProyectos : Window
     {
-        public rSegundoParcial()
+        public rProyectos()
         {
             InitializeComponent();
         }
