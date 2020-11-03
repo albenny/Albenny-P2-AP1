@@ -1,15 +1,15 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Linq;
-using System.Linq.Expressions;
-using Microsoft.EntityFrameworkCore;
-using Albenny_P2_AP1.DAL;
-using Albenny_P2_AP1.Entidades;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Albenny_P2_AP1.BLL
+namespace Albenny_P2_AP1.Entidades
 {
-    public class ProyectosBLL
+    public class TiposTareas
     {
+        [Key]
+        public int TipoTareasId { get; set; }
+        public string TipoTarea { get; set; }
     }
 }

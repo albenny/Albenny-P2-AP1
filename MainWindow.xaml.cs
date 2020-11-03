@@ -1,28 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
+using Albenny_P2_AP1.UI.Registros;
+using Albenny_P2_AP1.UI.Consultas;
 
 namespace Albenny_P2_AP1
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void rProyectosMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            rProyectos rProyectos = new rProyectos();
+            rProyectos.Show();
+        }
+
+        private void cTiposTareasMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            cTiposTareas cTiposTareas = new cTiposTareas();
+            cTiposTareas.Show();
         }
     }
 }

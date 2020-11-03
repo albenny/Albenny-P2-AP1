@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-public class Utiidades
+public class Utilidades
 {
     public static int ToInt(string valor)
     {

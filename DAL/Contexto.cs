@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
 using Albenny_P2_AP1.Entidades;
+using Albenny_P2_AP1.BLL;
 
 namespace Albenny_P2_AP1.DAL
 {
@@ -13,15 +14,15 @@ namespace Albenny_P2_AP1.DAL
         //——————————————————————————————————————————————————————————————————————————————————————
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite(@"Data Source = Data\ProyectoTareas.db");
+            optionsBuilder.UseSqlite(@"Data Source = Data\Albenny_P2_AP1.db");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<TiposTareas>().HasData(new TiposTareas { TareaId = 1, TiposTarea = "Analisis" });
-            modelBuilder.Entity<TiposTareas>().HasData(new TiposTareas { TareaId = 2, TiposTarea = "Diseño" });
-            modelBuilder.Entity<TiposTareas>().HasData(new TiposTareas { TareaId = 3, TiposTarea = "Programación" });
-            modelBuilder.Entity<TiposTareas>().HasData(new TiposTareas { TareaId = 4, TiposTarea = "Prueba" });
+            modelBuilder.Entity<TiposTareas>().HasData(new TiposTareas { TipoTareasId = 1, TipoTarea = "Analisis" });
+            modelBuilder.Entity<TiposTareas>().HasData(new TiposTareas { TipoTareasId = 2, TipoTarea = "Diseño" });
+            modelBuilder.Entity<TiposTareas>().HasData(new TiposTareas { TipoTareasId = 3, TipoTarea = "Programación" });
+            modelBuilder.Entity<TiposTareas>().HasData(new TiposTareas { TipoTareasId = 4, TipoTarea = "Prueba" });
         }
     }
 }
