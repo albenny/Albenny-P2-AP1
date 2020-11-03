@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
 using Albenny_P2_AP1.Entidades;
-using Albenny_P2_AP1.BLL;
 
 namespace Albenny_P2_AP1.DAL
 {
@@ -11,7 +10,7 @@ namespace Albenny_P2_AP1.DAL
     {
         public DbSet<TiposTareas> TiposTareas { get; set; }
         public DbSet<Proyectos> Proyectos { get; set; }
-        //——————————————————————————————————————————————————————————————————————————————————————
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlite(@"Data Source = Data\Albenny_P2_AP1.db");

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Albenny_P2_AP1.UI.Consultas"
         mc:Ignorable="d"
-        Title="CONSULTAR" Height="460" Width="640" WindowStartupLocation="CenterScreen" Icon="/Resources/Lista.png">
+        Title="CONSULTAR" Height="460" Width="640" WindowStartupLocation="CenterScreen">
     <Grid>
         <StackPanel Orientation="Vertical" Margin="0,5,0,0" HorizontalAlignment="Center">
 
@@ -28,7 +28,7 @@
 
                 <Button x:Name="BuscarButton" Height="30" Width="100" Click="ConsultarButton_Click" Margin="30,0,0,0" >
                     <StackPanel Orientation="Horizontal" >
-                        <Image Source="/Resources/Buscar.png" Width="25"  />
+                        <Image Source="/Imagenes/Buscar.png" Width="25"  />
                         <Label Content="Consultar" />
                     </StackPanel>
                 </Button>
